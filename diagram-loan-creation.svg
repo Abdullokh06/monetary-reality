@@ -1,0 +1,29 @@
+<svg width="600" height="260" viewBox="0 0 600 260"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <style>
+    text { font-family: serif; font-size: 14px; }
+    .title { font-weight: bold; }
+    .box { fill: none; stroke: black; }
+    .line { stroke: black; }
+  </style>
+
+  <text x="130" y="20" class="title">Before loan</text>
+  <text x="390" y="20" class="title">After loan</text>
+
+  <rect x="40" y="40" width="240" height="180" class="box"/>
+  <line x1="160" y1="40" x2="160" y2="220" class="line"/>
+
+  <text x="80" y="60" class="title">Assets</text>
+  <text x="180" y="60" class="title">Liabilities</text>
+
+  <rect x="320" y="40" width="240" height="180" class="box"/>
+  <line x1="440" y1="40" x2="440" y2="220" class="line"/>
+
+  <text x="360" y="60" class="title">Assets</text>
+  <text x="460" y="60" class="title">Liabilities</text>
+
+  <text x="350" y="120">Loan +100</text>
+  <text x="450" y="120">Deposit +100</text>
+
+</svg>
