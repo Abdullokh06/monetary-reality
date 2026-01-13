@@ -1,31 +1,69 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0
-    font-family: systm-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: #fafafa;
-    color: #111;
+/* Base */
+html {
+  box-sizing: border-box;
 }
 
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 60px 24px;
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #fafafa;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* Layout */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+/* Header & footer */
 header {
-    text-align: center;
-    margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 footer {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-    color: #666;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #666;
 }
-html {
-    box-sizing: border-box;
+
+/* Headings */
+h1, h2, h3 {
+  line-height: 1.3;
 }
-    *, *::before, *::after {
-        box-sizing: inherit;
-    }
+
+h2 {
+  margin-top: 3rem;
+}
+
+/* Balance sheet blocks */
+.balance-sheet {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.balance-sheet .box {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background: #fff;
+  font-family: monospace;
+}
+
+/* Test section */
+.test {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: #f0f0f0;
+  border-left: 4px solid #000;
+}
