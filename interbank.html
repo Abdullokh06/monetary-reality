@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <title>Interbank transfers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+    <div class="container">
+
+      <h2>Interbank transfers do not move money</h2>
+      <p>
+        When you send money to another bank,
+        your deposit does not travel.
+      </p>
+
+      <pre>
+        BANK A                     BANK B
+Assets | Liabilities       Assets | Liabilities
+Reserves -100 | Deposits -100   Reserves +100 | Deposits +10
+      </pre>
+
+      <p>
+        The central bank moves reserves.
+        Deposits are recreated locally.
+      </p>
+
+      <h3>Test your inuition</h3>
+
+      <form>
+        <label>
+          <input type="radio" name="q">
+          Deposits move between banks
+        </label><br>
+
+        <label>
+          <input type="radio" name="q">
+          Physical money moves
+        </label><br>
+
+        <label>
+          <input type="radio" name="q">
+          Central bank reserves move
+        </label><br>
+      </form>
+      
+      <button class="active button"> Think it through</button>
+
+      <p>
+        <a href="repayment.html"> ← Back</a>
+      </p>
+      
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
