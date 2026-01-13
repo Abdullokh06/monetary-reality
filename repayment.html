@@ -44,12 +44,19 @@ A loan is repaid in full. What happens to money?
   </label><br>
 
   <label>
-    <input type="radio" name="q2">
+    <input type="radio" name="q2" name="q2" value="destruction'>
     Money is destroyed as the balance sheets shrink
   </label><br>
 </form>
 
-<button class="active-button">Think it through</button>
+      <p id="result-repayment" style="margin-top:1.5em;"></p>
+
+<button 
+  type="button"
+  class="active-button"
+  onclick="checkAnswer('destruction', 'result-repayment')">
+  Think it through
+</button>
 
         <p>
   <a href="diagram.html">← Back</a> |
