@@ -40,13 +40,20 @@ Reserves -100 | Deposits -100   Reserves +100 | Deposits +10
         </label><br>
 
         <label>
-          <input type="radio" name="q">
-          Central bank reserves move
+          <input type="radio" name="q3" value="reserves">
+          Central bank reserves reserves are reallocated
         </label><br>
       </form>
       
-      <button class="active button"> Think it through</button>
+      <button
+        type="button"
+        class="active-button" 
+        onclick="checkAnswer('reserves', 'result-interbank')>
+        Think it through
+      </button>
 
+          <p id="result-interbank" style="margin-top:1.5em;"></p>
+          
       <p>
         <a href="repayment.html"> ← Back</a>
       </p>
