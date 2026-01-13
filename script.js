@@ -1,17 +1,25 @@
-function checkAnswer() {
-  const result = document.getElementById("result");
-  const choice = document.querySelector('input[name="answer"]:checked');
+function checkAnswer(correctValue, resultId) {
+  const inputs = document.querySelectorAll('input[type="radio"]');
+  let selected = null;
 
-  if (!choice) {
-    result.textContent = "Choose an assumption first.";
+  inputs.forEach(input => {
+    if (input.checked) {
+      selected = input.value;
+    }
+  });
+
+  const result = document.getElementById(resultId);
+
+  if (!selected) {
+    result.textContent = "Choose an option before proceeding.";
     return;
   }
 
-  if (choice.value === "creation") {
-    result.innerHTML =
-      "<strong>Accounting-consistent.</strong> The loan and deposit appear simultaneously as balance-sheet entries.";
+  if (selected === correctValue) {
+    result.textContent =
+      "Correct. This follows directly from balance sheet mechanics.";
   } else {
-    result.innerHTML =
-      "<strong>This assumption removes banks from the balance sheet.</strong> No accounting mechanism exists here that creates the deposit shown above.";
+    result.textContent =
+      "Think again. What must happen on balance sheets?";
   }
 }
