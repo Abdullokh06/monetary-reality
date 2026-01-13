@@ -42,3 +42,33 @@ The balance sheets expanded symmetrically.
 </div>
 </body>
 </html>
+
+<hr>
+
+<h3>Test your intuition</h3>
+
+<p>
+A bank issues a loan of 100.  
+What must happen <em>on balance sheets</em>?
+</p>
+
+<form id="quiz">
+  <label>
+    <input type="radio" name="answer" value="transfer">
+    Existing deposits are transferred from savers
+  </label><br><br>
+
+  <label>
+    <input type="radio" name="answer" value="centralbank">
+    The central bank creates the money
+  </label><br><br>
+
+  <label>
+    <input type="radio" name="answer" value="creation">
+    A new deposit appears together with the loan
+  </label><br><br>
+
+  <button type="button" onclick="checkAnswer()">Think it through</button>
+</form>
+
+<p id="result" style="margin-top:1.5em;"></p>
