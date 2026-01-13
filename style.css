@@ -85,3 +85,20 @@ footer {
   font-size: 0.85rem;
   color: #666;
 }
+.balance-sheet {
+  display: flex;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.balance-sheet .box {
+  flex: 1;
+  border: 1px solid #999;
+  padding: 1rem;
+  background: #fff;
+}
+
+.balance-sheet pre {
+  font-family: monospace;
+  font-size: 0.9rem;
+}
