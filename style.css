@@ -23,3 +23,9 @@ footer {
     font-size: 0.9rem;
     color: #666;
 }
+html {
+    box-sizing: border-box;
+}
+    *, *::before, *::after {
+        box-sizing: inherit;
+    }
