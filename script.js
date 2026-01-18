@@ -1,4 +1,4 @@
-ocument.addEventListener("click", function (e) {
+document.addEventListener("click", function (e) {
   if (!e.target.classList.contains("quiz-btn")) return;
 
   const quiz = e.target.closest(".quiz");
