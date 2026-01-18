@@ -15,12 +15,28 @@
         your deposit does not travel.
       </p>
 
-      <pre>
-        BANK A                     BANK B
-Assets | Liabilities       Assets | Liabilities
-Reserves -100 | Deposits -100   Reserves +100 | Deposits +10
-      </pre>
+      <div class="balance-sheet">
 
+        <div class="box">
+          <strong>BANK A</strong>
+      <pre>                    
+Assets        | Liabilities 
+--------------|--------------       
+Reserves -100 | Deposits -100 
+      </pre>
+        </div>
+
+        <div class="box">
+          <strong>BANK B</strong>
+          <pre>                    
+Assets        | Liabilities 
+--------------|--------------       
+Reserves +100 | Deposits +100 
+      </pre>
+        </div>
+        
+      </div>
+      
       <p>
         The central bank moves reserves.
         Deposits are recreated locally.
