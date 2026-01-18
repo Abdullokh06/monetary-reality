@@ -188,3 +188,11 @@ button:not(:disabled).active-button {
   transform: translateY(1px);
   opacity: 0.85;
 }
+
+.progress {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #666;
+  margin-bottom: 2.5rem;
+}
