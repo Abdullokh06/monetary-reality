@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Central bank and money</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+
+<h2>The central bank does not create money for the public</h2>
+
+<p>
+This is where confusion usually peaks.
+People assume the central bank "prints money"
+and hands it to the economy.
+</p>
+
+<p>
+That is not what central banks do. Have you ever heard about M0 or M1?
+</p>
+
+<hr>
+
+<h3>What the central bank actually creates</h3>
+
+<p>
+The central bank creates <strong>reserves</strong>.
+Reserves exist only between banks and the central bank.
+Of course the central bank prints money physically, but not all the time.
+</p>
+
+  <div class="balance-sheet">
+
+    <div class="box">
+      <strong>Central bank</strong>
+<pre>
+Assets | Liabilities
+----------------------
+Bonds  | Reserves +100
+</pre>
+    </div>
+
+      <div class="box">
+        <strong>Commercial bank</strong>
+  <pre>
+Assets        | Liabilities
+---------------------------
+Reserves +100 | Equity
+</pre>
+      </div>
+
+  </div>
+
+<p>
+Reserves are not deposits.
+Households and firms cannot use reserves to pay each other.
+</p>
+
+<hr>
+
+<h3>Where money for the public comes from</h3>
+
+<p>
+Money used by households and firms appears
+when commercial banks issue loans.
+</p>
+
+<p>
+The central bank is not involved in this process directly.
+</p>
+
+<p>
+Banks do not wait for reserves to lend.
+They lend first — and obtain reserves later if needed.
+</p>
+
+<hr>
+
+<h3>Test your intuition</h3>
+
+<p>
+A commercial bank issues a loan.
+What role does the central bank play <em>at that moment</em>?
+</p>
+
+<form class="quiz">
+
+  <label>
+    <input type="radio" name="q" value="wrong">
+    The central bank provides the money for the loan
+  </label><br>
+
+  <label>
+    <input type="radio" name="q" value="wrong">
+    The central bank approves each loan
+  </label><br>
+
+  <label>
+    <input type="radio" name="q" value="correct">
+    No direct role — the bank creates the deposit itself
+  </label><br><br>
+
+  <button type="button" class="quiz-btn active-button">
+    Think it through
+  </button>
+
+  <p class="quiz-result"></p>
+</form>
+
+<hr>
+
+<h3>Why this distinction matters</h3>
+
+<p>
+If money were created by the central bank,
+credit cycles would be policy accidents.
+</p>
+
+<p>
+But if money is created by commercial banks,
+instability is endogenous.
+</p>
+
+<p>
+Crises are not surprises.
+They are balance-sheet dynamics.
+</p>
+
+<hr>
+
+<p>
+<a href="interbank.html">← Back: interbank transfers</a> |
+<a href="index.html">Return to main page →</a>
+</p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
