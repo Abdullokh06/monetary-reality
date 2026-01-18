@@ -8,13 +8,30 @@
   
     <body>
       <div class="container">
+        
 <h2>What happens when the loan is repaid?</h2>
 
-        <pre>
-BANK                     BORROWER
-Assets | Liabilities     Assets | Liabilities
-Loan 0  | Deposit 0      Deposit 0 | Loan 0
+        <div class="balance-sheet">
+
+          <div class="box">
+            <strong>BANK</strong>
+        <pre>                   
+Assets | Liabilities
+-------|------------
+Loan 0 | Deposit 0      
         </pre>
+          </div>
+
+          <div class="box">
+            <strong>BORROWER</strong>
+            <pre>                     
+Assets | Liabilities
+-------|------------
+Loan 0 | Deposit 0     
+        </pre>
+          </div>
+
+        </div>
         
 <p>
 When the borrower repays the loan, both the loan and the deposit disappear.
