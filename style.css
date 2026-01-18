@@ -162,3 +162,14 @@ button:not(:disabled).active-button {
 .nav a:hover {
   text-decoration: underline;
 }
+
+.thought-box {
+  border-left: 3px solid #111;
+  padding-left: 1.2rem;
+  margin: 2.5rem 0;
+}
+
+.thought-box p {
+  margin-bottom: 0.6rem;
+  font-style: italic;
+}
