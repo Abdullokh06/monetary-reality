@@ -1,25 +1,17 @@
-function checkAnswer(correctValue, resultId) {
-  const inputs = document.querySelectorAll('input[type="radio"]');
-  let selected = null;
+document.addEventListener("click", function (e) {
+  if (!e.target.classList.contains("quiz-btn")) return;
 
-  inputs.forEach(input => {
-    if (input.checked) {
-      selected = input.value;
-    }
-  });
+  const form = e.target.closest(".quiz");
+  const result = form.nextElementSibling;
+  const checked = form.querySelector("input[type=radio]:checked");
 
-  const result = document.getElementById(resultId);
-
-  if (!selected) {
-    result.textContent = "Choose an option before proceeding.";
+  if (!checked) {
+    result.textContent = "Choose an option first.";
     return;
   }
 
-  if (selected === correctValue) {
-    result.textContent =
-      "Correct. This follows directly from balance sheet mechanics.";
+  if (checked.value === "correct") {
+    result.textContent = "Correct. This follows from balance-sheet mechanics.";
   } else {
-    result.textContent =
-      "Think again. What must happen on balance sheets?";
+    result.textContent = "No. Trace the balance sheets carefully.";
   }
-}
