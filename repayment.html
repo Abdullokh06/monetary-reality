@@ -34,34 +34,31 @@ A loan is repaid in full. What happens to money?
 
 <form>
   <label>
-    <input type="radio" name="q2">
+    <input type="radio" name="q1" value="wrong">
     Money goes to another depositor
   </label><br>
 
   <label>
-    <input type="radio" name="q2">
-    The central bank absorbs it
+    <input type="radio" name="q1 value="correct">
+    Money is destroyed as the balance sheets shrink
   </label><br>
 
   <label>
-    <input type="radio" name="q2" name="q2" value="destruction'>
-    Money is destroyed as the balance sheets shrink
-  </label><br>
-</form>
+    <input type="radio" name="q1" value="wrong">
+    The central bank absorbs it
+  </label><br><br>
 
-      <p id="result-repayment" style="margin-top:1.5em;"></p>
-
-<button 
-  type="button"
-  class="active-button"
-  onclick="checkAnswer('destruction', 'result-repayment')">
+<button type="button" class="quiz-btn">
   Think it through
 </button>
+</form>
 
+        <p class="quiz-result"></p>
+        
         <p>
   <a href="diagram.html">← Back</a> |
   <a href="interbank.html">Next: interbank transfers →</a>
-</p>
+        </p>
         
       </div>
       <script src="script.js"></script>
