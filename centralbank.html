@@ -2,64 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Central bank</title>
+  <title>Central bank operations</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <div class="container">
 
-  <p class="progress">
-    Step 4 of 4 - Central bank operations
-  </p>
-
-<h2>What the central bank actually does</h2>
+<h2>The central bank does not fund the economy</h2>
 
 <p>
-The central bank does not create money the way commercial banks do.
-It operates on a different layer of the monetary system.
+When people say “the central bank prints money”,  
+they usually imagine money flowing into households or firms.
+</p>
+
+<p>
+That is not how it works.
 </p>
 
 <hr>
 
-<h3>Two layers of money</h3>
+<h3>What the central bank actually does</h3>
 
-<p>
-Modern monetary systems have two distinct layers:
-</p>
+<div class="balance-sheet">
 
-<ul>
-  <li><strong>Bank deposits</strong> — used by households and firms</li>
-  <li><strong>Central bank reserves</strong> — used only by banks</li>
-</ul>
-
-<p>
-These layers are connected, but they are not the same thing.
-</p>
-
-<hr>
-
-<h3>Reserves are not deposits</h3>
-
-  <div class="thought-box">
-<pre>
-CENTRAL BANK
-------------------------
-Liabilities:
-• Bank reserves
-
-COMMERCIAL BANK
-------------------------
-Assets:
-• Reserves at central bank
-Liabilities:
-• Deposits of customers
-</pre>
+  <div class="box">
+    <strong>Central Bank</strong>
+    <pre>
+ASSETS              | LIABILITIES
+--------------------|--------------------
+Government bonds    | Bank reserves
+    </pre>
   </div>
 
+  <div class="box">
+    <strong>Commercial Bank</strong>
+    <pre>
+ASSETS              | LIABILITIES
+--------------------|--------------------
+Reserves +100       | Deposits (unchanged)
+    </pre>
+  </div>
+
+</div>
+
 <p>
-When a bank creates a loan, it creates a deposit.
-No central bank money is involved at that moment.
+The central bank creates reserves.  
+Reserves exist only between banks.
+</p>
+
+<p>
+Households and firms cannot hold them.
 </p>
 
 <hr>
@@ -67,25 +60,25 @@ No central bank money is involved at that moment.
 <h3>Test your intuition</h3>
 
 <p>
-When a commercial bank issues a loan,
-where does the new deposit come from?
+When the central bank buys government bonds,  
+what happens to money used by households?
 </p>
 
 <form class="quiz">
 
   <label>
     <input type="radio" name="q" value="wrong">
-    From central bank reserves
+    It increases directly
   </label><br>
 
   <label>
     <input type="radio" name="q" value="wrong">
-    From prior savings
+    It is transferred from the central bank
   </label><br>
 
   <label>
     <input type="radio" name="q" value="correct">
-    From the bank’s own balance sheet
+    Nothing — only bank reserves change
   </label><br><br>
 
   <button type="button" class="quiz-btn">
@@ -93,51 +86,14 @@ where does the new deposit come from?
   </button>
 
   <p class="quiz-result"></p>
+
 </form>
 
 <hr>
 
-<h3>Why control is indirect</h3>
-
 <p>
-Central banks influence interest rates,
-liquidity conditions and regulations.
-But they do not decide who gets loans
-or how much money banks create.
-</p>
-
-<p>
-Money creation is decentralized.
-Control is indirect.
-Instability is structural.
-</p>
-
-<hr>
-
-<h3>You have now seen the mechanism</h3>
-
-<p>
-Money appears and disappears through balance sheets.
-Not through preferences.
-Not through equilibrium conditions.
-</p>
-
-<p>
-Once banks are included,
-financial crises stop being mysterious.
-</p>
-
-<hr>
-
-  <a href="interbank.html"> ← Back: interbank transfers</a>
-  <a href="index.html">Return to main page →</a>
-
-<p class="nav">
-  <a href="index.html">Home</a> |
-  <a href="diagram.html">Loan creation</a> |
-  <a href="repayment.html">Repayment</a> |
-  <a href="interbank.html">Interbank</a> |
-  <strong>Central bank</strong>
+<a href="interbank.html">← Back</a> |
+<a href="index.html">Start again →</a>
 </p>
 
 </div>
