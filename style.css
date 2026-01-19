@@ -215,6 +215,22 @@ button:not(:disabled).active-button {
   font-size: 0.95rem;
 }
 
+.quiz-btn {
+  margin-top: 1rem;
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+  .quiz-btn {
+    background: #333;
+  }
+
 /* Quiz styling */
 
 .quiz label {
